@@ -7,12 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText etUsuario, etContra;
     TextView tvTitulo, tvValidacion;
+    ImageView Foto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
