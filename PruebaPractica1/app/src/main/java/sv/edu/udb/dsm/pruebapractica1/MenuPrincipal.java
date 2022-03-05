@@ -29,10 +29,12 @@ public class MenuPrincipal extends AppCompatActivity {
         tvSaludo.setText( "Bienvenido "+ usuario);
     }
     public void onClickPrimero(View v){
-        finish();
+        Intent llamar = new Intent(this,Ejercicio1.class);
+        startActivity(llamar);
     }
     public void onClickSegundo(View v){
-        finish();
+        Intent llamar = new Intent(this,Ejercicio2.class);
+        startActivity(llamar);
     }
 
     public void finalizar(View v){

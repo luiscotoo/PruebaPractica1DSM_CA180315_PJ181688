@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void guardarPreferencias(View v){
 
-
         SharedPreferences preferences=getSharedPreferences
                 ("credenciales", Context.MODE_PRIVATE);
         String usuario = etUsuario.getText().toString();
