@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipal">
+
+    <Button
+        android:id="@+id/btnPrimero"
+        android:layout_width="230dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="91dp"
+        android:onClick="onClickPrimero"
+        android:text="Primer Ejercicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSaludo" />
+
+    <Button
+        android:id="@+id/btnSegundo"
+        android:layout_width="230dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="91dp"
+        android:onClick="onClickSegundo"
+        android:text="Segundo Ejercicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrimero" />
+
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="122dp"
+        android:onClick="finalizar"
+        android:text="Cerrar Sesión"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSegundo" />
+
+    <TextView
+        android:id="@+id/tvSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="146dp"
+        android:text="Bienvenido Usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
