@@ -9,9 +9,59 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#E5E5E5"
+        android:background="#fefae0"
+        android:fontFamily="sans-serif"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-60dp">
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textUser"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginLeft="71dp"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:text="USUARIO"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#14213D"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/idfoto"
+            android:layout_width="158dp"
+            android:layout_height="159dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="90dp"
+            android:ems="10"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="324dp"
+            android:layout_height="29dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:text="RESULTADOS DEL VENDEDOR"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#14213D"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/txtNombre"
@@ -20,84 +70,10 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="97dp"
-            android:layout_marginLeft="97dp"
-            android:layout_marginTop="221dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="264dp"
             android:ems="10"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtcomision"
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="165dp"
-            android:layout_marginLeft="165dp"
-            android:layout_marginTop="406dp"
-            android:ems="10"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txt"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="406dp"
-            android:ems="10"
-            android:hint="% de Comision:"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtTotalv"
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="167dp"
-            android:layout_marginLeft="167dp"
-            android:layout_marginTop="361dp"
-            android:ems="10"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtCodigo"
-            android:layout_width="194dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="215dp"
-            android:layout_marginLeft="215dp"
-            android:layout_marginTop="268dp"
-            android:ems="10"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="220dp"
-            android:ems="10"
-            android:hint="Nombre:"
-            android:inputType="text"
-            android:textColor="#14213D"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -108,40 +84,24 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="269dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="312dp"
             android:hint="Codigo del vendedor:"
             android:textColor="#14213D"
             android:textSize="20dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txt4"
-            android:layout_width="150dp"
+            android:id="@+id/txtCodigo"
+            android:layout_width="165dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="362dp"
-            android:ems="10"
-            android:hint="Total de Ventas:"
-            android:textColor="#14213D"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txtMes"
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="157dp"
-            android:layout_marginLeft="157dp"
-            android:layout_marginTop="315dp"
+            android:layout_marginStart="213dp"
+            android:layout_marginLeft="213dp"
+            android:layout_marginTop="311dp"
             android:ems="10"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -153,9 +113,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="315dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="358dp"
             android:ems="10"
             android:hint="Mes de ventas:"
             android:textColor="#14213D"
@@ -163,15 +123,74 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txtTotalc"
+            android:id="@+id/txtMes"
             android:layout_width="202dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="187dp"
-            android:layout_marginLeft="187dp"
-            android:layout_marginTop="459dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="358dp"
+            android:ems="10"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="405dp"
+            android:ems="10"
+            android:hint="Total de Ventas:"
+            android:textColor="#14213D"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTotalv"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="165dp"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="404dp"
+            android:ems="10"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="449dp"
+            android:ems="10"
+            android:hint="% de Comision:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtcomision"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="163dp"
+            android:layout_marginLeft="163dp"
+            android:layout_marginTop="449dp"
             android:ems="10"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -183,9 +202,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="459dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="502dp"
             android:ems="10"
             android:hint="Total en Comision:"
             android:textColor="#14213D"
@@ -193,33 +212,18 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textInfo"
-            android:layout_width="wrap_content"
+            android:id="@+id/txtTotalc"
+            android:layout_width="202dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginStart="185dp"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="502dp"
             android:ems="10"
-            android:text="Resultados del vendedor"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#14213D"
+            android:textSize="20dp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/idfoto"
-            android:layout_width="149dp"
-            android:layout_height="142dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="134dp"
-            android:layout_marginLeft="134dp"
-            android:layout_marginTop="56dp"
-            android:ems="10"
-            tools:srcCompat="@tools:sample/avatars" />
 
         <Button
             android:id="@+id/btnCalcular"
@@ -228,13 +232,30 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="31dp"
-            android:layout_marginLeft="31dp"
-            android:layout_marginTop="522dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="565dp"
             android:background="#14213D"
             android:onClick="finalizarActividad"
             android:text="Salir"
             android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="263dp"
+            android:ems="10"
+            android:hint="Nombre:"
+            android:inputType="text"
+            android:textColor="#14213D"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>

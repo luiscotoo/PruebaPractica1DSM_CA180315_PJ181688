@@ -37,9 +37,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString("usuario", usuario);
         editor.putString("contraseña", contra);
-
         editor.commit();
-
         Intent llamar = new Intent(this,MenuPrincipal.class);
         startActivity(llamar);
         etUsuario.setText("");
