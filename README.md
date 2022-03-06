@@ -1,2 +1,2 @@
-# PruebaPractica1DSM_CA180315
- Prueba práctica 1 de DSM
+# PruebaPractica1DSM_CA180315_PJ181688
+Desarrollo del primer ejercicio.
