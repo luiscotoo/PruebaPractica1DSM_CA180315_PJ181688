@@ -7,7 +7,8 @@
  
 :two: El segundo ejercicio se puede accesar bajo la opción de "Segundo Ejercicio" del menú, y es sobre una calculadora para resolver aplicaciones de segundo grado con la fórmula cuadrática.
 
-:loudspeaker:La aplicación completa se encuentra en la rama main. El compañero Bryan desarrolló el ejercicio 1 en la rama master.
+:loudspeaker:La aplicación completa se encuentra en la rama main. El compañero Bryan desarrolló el ejercicio 1 en la rama master. 
+Se realizara un marge.
 ## :man_technologist: Integrantes 
 #### Luis Felipe Coto Arias CA180315
 #### Bryan Omar Pérez Jiménez PJ181688
