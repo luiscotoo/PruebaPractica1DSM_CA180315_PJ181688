@@ -4,6 +4,192 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fefae0"
     tools:context=".Ejercicio2">
 
+    <TextView
+        android:id="@+id/tvSaludoEj2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="147dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Bienvenido Usuario"
+        android:textColor="#14213d"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCerrar2"
+        android:layout_width="177dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="117dp"
+        android:onClick="finalizar"
+        android:text="Volver al menu"
+        android:backgroundTint="#14213d"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvX2" />
+
+    <TextView
+        android:id="@+id/tvTituloFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="105dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Cálculo de la formula cuadrática"
+        android:textColor="#14213d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSaludoEj2" />
+
+    <TextView
+        android:id="@+id/tvIndicaciones"
+        android:layout_width="237dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="85dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Ingrese los valores de cada variable:"
+        android:textColor="#14213d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/etVarA"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="A"
+        android:textColorHint="#14213d"
+        android:fontFamily="sans-serif-black"
+        android:inputType="numberDecimal|numberSigned"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/etVarB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIndicaciones" />
+
+    <EditText
+        android:id="@+id/etVarC"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:ems="10"
+        android:hint="C"
+        android:textColorHint="#14213d"
+        android:fontFamily="sans-serif-black"
+        android:inputType="numberDecimal|numberSigned"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etVarB"
+        app:layout_constraintTop_toBottomOf="@+id/tvIndicaciones" />
+
+    <EditText
+        android:id="@+id/etVarB"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="13dp"
+        android:ems="10"
+        android:textColorHint="#14213d"
+        android:fontFamily="sans-serif-black"
+        android:hint="B"
+        android:inputType="numberDecimal|numberSigned"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/etVarC"
+        app:layout_constraintStart_toEndOf="@+id/etVarA"
+        app:layout_constraintTop_toBottomOf="@+id/tvIndicaciones" />
+
+    <TextView
+        android:id="@+id/tvResultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="169dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Resultados:"
+        android:textColor="#14213d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularCuad" />
+
+    <TextView
+        android:id="@+id/tvX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="144dp"
+        android:text="X1="
+        android:textColor="#14213d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etVarA" />
+
+    <TextView
+        android:id="@+id/tvX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:text="X2="
+        android:textColor="#14213d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvX1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="62dp"
+        android:background="@drawable/fcuad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloFor" />
+
+    <Button
+        android:id="@+id/btnCalcularCuad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="156dp"
+        android:backgroundTint="#14213d"
+        android:onClick="CalcularFormula"
+        android:text="Calcular"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etVarB" />
+
+    <TextView
+        android:fontFamily="sans-serif-black"
+        android:id="@+id/tvValidacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="177dp"
+        android:textColor="#FA0707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularCuad" />
 </android.support.constraint.ConstraintLayout>

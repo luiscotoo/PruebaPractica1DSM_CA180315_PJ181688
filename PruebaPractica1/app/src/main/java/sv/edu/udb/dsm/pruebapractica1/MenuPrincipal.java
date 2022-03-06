@@ -37,7 +37,9 @@ public class MenuPrincipal extends AppCompatActivity {
         startActivity(llamar);
     }
 
-    public void finalizar(View v){
+    public void CerrarSesion(View v){
+        SharedPreferences preferences = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
+        preferences.edit().clear().commit();
         finish();
     }
 }
