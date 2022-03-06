@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     EditText etUsuario, etContra;
-    TextView tvTitulo, tvValidacion;
+    TextView tvTitulo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,27 +21,42 @@ public class MainActivity extends AppCompatActivity {
 
         etUsuario = (EditText) findViewById(R.id.etUsuario);
         etContra = (EditText) findViewById(R.id.etContra);
-        tvValidacion = (TextView) findViewById(R.id.tvValidacion);
+
     }
 
 
     public void guardarPreferencias(View v){
+        if(etUsuario.getText().toString().isEmpty() || etContra.getText().toString().isEmpty()){
+            if(etUsuario.getText().toString().isEmpty()){
+                etUsuario.setError("Ingrese un Usuario");
+            }
+            if(etContra.getText().toString().isEmpty()){
+                etContra.setError("Ingrese una contraseña");
+            }
+        }else {
+            etUsuario.setError(null);
+            etContra.setError(null);
+            SharedPreferences preferences=getSharedPreferences
+                    ("credenciales", Context.MODE_PRIVATE);
+            String usuario = etUsuario.getText().toString();
+            String contra = etContra.getText().toString();
 
-        SharedPreferences preferences=getSharedPreferences
-                ("credenciales", Context.MODE_PRIVATE);
-        String usuario = etUsuario.getText().toString();
-        String contra = etContra.getText().toString();
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("usuario", usuario);
+            editor.putString("contraseña", contra);
 
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putString("usuario", usuario);
-        editor.putString("contraseña", contra);
+            editor.commit();
 
-        editor.commit();
+            Intent llamar = new Intent(this,MenuPrincipal.class);
+            startActivity(llamar);
+            etUsuario.setText("");
+            etContra.setText("");
+        }
 
-        Intent llamar = new Intent(this,MenuPrincipal.class);
-        startActivity(llamar);
-        etUsuario.setText("");
-        etContra.setText("");
+    }
+
+    public void finalizar(View v){
+        finish();
     }
 
 
