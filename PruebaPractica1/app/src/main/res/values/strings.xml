@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">PruebaPractica1</string>
-    <string name="Titulo">Seleciona el Mes de dichas ventas</string>
+    <string name="Titulo">Selecione el Mes de venta:</string>
     <string-array name="Meses">
         <item>Enero</item>
         <item>Febrero</item>
